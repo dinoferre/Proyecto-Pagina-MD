@@ -1,0 +1,109 @@
+/*coloco la fuente desde google fonts*/
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap);
+
+body {
+    font-family: "Montserrat" sans-serif;
+    overflow-x: hidden;
+}
+
+/* <!-- MENU --> */
+
+#menu li > a {
+    font-size: 18px; /*tamaño*/
+    font-weight: bold; /*negrita*/
+    color: #3f3f3f; /*color de la letra*/
+}
+
+#menu form > button {
+    font-size: 18px; /*tamaño*/
+    font-weight: bold; /*negrita*/
+}
+
+/*=========== SLIDER DE IMAGENES ===========*/
+.carousel-inner {
+    max-height: 100rem;
+
+}
+
+/*=========== MEDIAQUERY PARA PANTALLA SMALL ===========*/
+@media(max-width:768px){
+    #intro, #equipo{
+        width: 90% !important;
+        
+    }
+
+    #equipo p{
+        display: none;
+    }
+    .servicio-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+    
+
+    #bg-contacto{
+        top: -110px;
+    }
+}
+
+/*=========== MEDIAQUERY PARA PANTALLA SUPER PEQUEÑA ===========*/
+
+@media(max-width: 576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    #ajuste{
+        flex-wrap: wrap;
+        justify-content: center !important;
+        text-align: center;
+    }
+}
+
+
+
+/*=========== MEDIAQUERY PARA PANTALLA ANCHA===========*/
+@media (max-width:1200px) {
+    #local{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .wrapper{
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    
+    
+}
+
+
+
+
+/*=========== FOOTER ===========*/
+
+footer {
+   min-height: 100px;
+
+}
+
+footer p{
+    color: #f3f3f3;
+    text-align: center;
+}
+
+#iconos i{
+    font-size: 26px;
+    padding: 0 8px;
+    color: #f3f3f3;
+}
+
+.form__input {
+    font-family: inherit;
+}
+
+.fonm__cta{
+    font-family: inherit;
+}

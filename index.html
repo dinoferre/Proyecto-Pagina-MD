@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- agrego cdn de iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"> 
+    <title>Expert.AD</title>
+    <!-- AGREGO CSS BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- AGREGO CSS -->
+    <link rel="stylesheet" href="CSS/main.css">
+  </head>
+  <body>
+<!-- ======================================== -->
+    <!-- ENCABEZADO -->
+<!-- ======================================== -->
+<header class="container-fluid bg-success d-flex justify-content-center"> <!-- conteiner-fluid ocupara el ancho completo de la pantalla y bg-success el color de fondo, d-flex justify-content-center: pone al centro el P-->
+    <p class="text-light mb-0 p-2 fs-6">Contactanos al +54 (011) 155795177</p> <!-- text-light cambia el color del texto, mb es marggin buttom, mt margin top, mx margen horizontal y my margen vertical, p-2 un poco de relleno, fs font size tamaño de la letra -->
+</header>
+
+
+<!-- ======================================== -->
+     <!-- BARRA DE NAVEGACION SUPERIOR -->
+<!-- ======================================== -->
+<nav class="navbar navbar-expand-lg bg-light p-3" id="menu"> 
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <span class="text-success fs-5 fw-bold">Expert.AD</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#servicios">¿Que hacemos?</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#equipo">Acerca de nosotros</a>
+          </li>
+          </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
+          <button class="btn btn-outline-success" type="button">Suscribete</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- ======================================== -->
+     <!-- SLIDER DE IMAGENES -->
+<!-- ======================================== -->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      
+        <div class="carousel-item active" data-bs-interval="3000"> 
+        <!-- data-bs-interval="3000" es el tiempo que tarda cada imagen en aparecer 1000 es mas lento, 4000 es mas rapido -->
+        <img src="/IMG/Marketing _Flatline.svg" class="d-block w-100" alt="Slide 1">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="/IMG/Designer _Flatline.svg" class="d-block w-100" alt="Slide 2">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="/IMG/Code Development _Flatline.svg" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+<!-- ======================================== -->
+     <!-- INTRO -->
+<!-- ======================================== -->
+  <section class="w-50 mx-auto text-center pt-5" id="intro"> <!-- w-50 es el tamaño y mx-auto para centrar, text-center para centrar le agrego un id para luego modificarlo en css -->
+    <h1 class="p-3 fs-2 border-top borde-3" id="servicios">Somos una agencia unica para todas tus necesidades de <span class="text-success">Crecimiento Digital</span></h1>
+    <p class="p-3 fs-4"><span class="text-success">Expert.AD</span> es donde te vamos a ayudar a potenciar tu marca o emprendimiento</p>
+  </section>
+
+
+<!-- ======================================== -->
+     <!-- SERVICIOS -->
+<!-- ======================================== -->
+  <section class="conteiner-fluid">
+    <div class="row w-75 mx-auto servicio-fila">
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex icono-wrap">
+            <img src="/IMG/Startup_Flatline.svg" alt="desarrollo" width="180" height="160">
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1">Branding</h3>
+                <p class="px-4">Realizamos un conjunto de acciones relacionadas con el posicionamiento, el propósito y los valores de tu marca.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex icono-wrap">
+            <img src="/IMG/SEO_Flatline.svg" alt="desarrollo" width="180" height="160">
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1">SEO</h3>
+                <p class="px-4">Posicionamos tu marca y logramos que llegues a mas personas</p>
+            </div>
+        </div>
+    
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+            <img src="/IMG/PR_Flatline.svg" alt="desarrollo" width="180" height="160">
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1">Comunicacion</h3>
+                <p class="px-4">Nos enfocamos en el contenido y en el mensaje que quieres transmitir a esos clientes potenciales. Y armamos juntos un plan de comunicacion</p>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex icono-wrap">
+            <img src="/IMG/Web Developer_Flatline.svg" alt="desarrollo" width="180" height="160">
+            <div>
+                <h3 class="fs-5 mt-4 px-4 pb-1">Desarrollo</h3>
+                <p class="px-4">Construimos y mantenemos tu sitio. Nos encargamos que tenga una apariencia impecable y un funcionamiento rapido</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+<!-- ======================================== -->
+     <!-- ACERCA DE NOSOTROS -->
+<!-- ======================================== -->
+<section class="w-50 m-auto text-center pt-5 border-top borde-3" id="intro">
+    <div id="equipo">
+        <h1 class="mb-5 fs-2">Equipo pequeño con <span class="text-success fw-bold">Resultados Grandes</span></h1>
+        <p class="fs-4">Tenemos a las personas adecuadas para poder brindarte el mejor resultado con la rapidez y eficacia que los tiempos modenos demandan.</p>
+    </div>
+
+    <div class="mt-5 text-center">
+        <img class="img-fluid" src="/IMG/Brainstorming session _Flatline.svg" alt="equipo">
+    </div>
+
+</section>
+
+
+<!-- ======================================== -->
+     <!-- PIE DE PAGINA -->
+<!-- ======================================== -->
+
+<footer class="w100 d-flex icono-wrap align-items-center justify-content-center flex-wrap mx-auto bg-success">
+    <p class="fs-5 px-3 pt-3">Expert.AD &copy; Todos los derechos reservados. 2022.</p>
+    <div id="iconos">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+    </div>
+</footer>
+
+
+ 
+
+
+    
+
+
+
+<form action="https://formspree.io/f/xdobryez" method="POST" class="form bg-success">
+    <div class="form__container">
+        <h2 class="form__container">Envianos un Mensaje</h2>
+<label>
+  Tu correo electronico:
+  <input type="email" name="email" class="form__input">
+</label>
+<label>
+  Tu mensaje:
+  <textarea name="message" class="form__input form__input--message"></textarea>
+</label>
+
+<button type="submit" class="form__cta">Enviar</button>
+</div>
+</form>
+
+
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+    <!-- AGREGO JS BOOSTRAP -->
+<script src="/main.js"></script>
+
+
+
+  </body>
+</html>
